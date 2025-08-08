@@ -101,9 +101,19 @@ class CryptoDataFetcher:
         try:
             _self._rate_limit()
             
+            # Convert dates to datetime if needed
+            if isinstance(start_date, datetime):
+                start_dt = start_date
+            else:
+                start_dt = datetime.combine(start_date, datetime.min.time())
+            if isinstance(end_date, datetime):
+                end_dt = end_date
+            else:
+                end_dt = datetime.combine(end_date, datetime.min.time())
+            
             # Convert dates to timestamps
-            start_timestamp = int(start_date.timestamp())
-            end_timestamp = int(end_date.timestamp())
+            start_timestamp = int(start_dt.timestamp())
+            end_timestamp = int(end_dt.timestamp())
             
             # CoinGecko API endpoint
             url = f"{_self.base_url}/coins/{crypto_id}/market_chart/range"
