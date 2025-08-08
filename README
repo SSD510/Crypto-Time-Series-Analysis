@@ -1,0 +1,240 @@
+# Cryptocurrency Time Series Analysis - User Guide
+
+## Welcome! 👋
+
+This guide will help you navigate and utilize all the features of the Cryptocurrency Time Series Analysis Dashboard. Whether you're a trader, researcher, or crypto enthusiast, this tool provides comprehensive analysis capabilities for cryptocurrency price data.
+
+## Getting Started 🚀
+
+### 1. Loading Data
+1. **Select Cryptocurrency**: Use the dropdown in the sidebar to choose from 8 major cryptocurrencies
+2. **Set Date Range**: Select start and end dates for your analysis period
+3. **Load Data**: Click the "🔄 Load Data" button to fetch and process the data
+
+**💡 Tip**: For better analysis results, use at least 3-6 months of data.
+
+### 2. Navigation
+The dashboard is organized into four main tabs:
+- **📊 Overview**: Basic price and volume information
+- **🎯 Technical Analysis**: Moving averages and indicators
+- **🔍 Time Series Analysis**: Statistical decomposition and tests
+- **🔮 Forecasting**: Price prediction models
+
+## Tab-by-Tab Guide 📋
+
+### Overview Tab 📊
+
+**What you'll find:**
+- Interactive price history chart
+- Trading volume visualization  
+- Basic statistical summaries
+- Key metrics in the header (price, volume, volatility, etc.)
+
+**How to use:**
+- Hover over charts to see exact values
+- Use zoom and pan controls on charts
+- Compare price and volume patterns over time
+
+**Key insights:**
+- Identify overall price trends
+- Spot high/low volume periods
+- Understand price volatility patterns
+
+### Technical Analysis Tab 🎯
+
+**What you'll find:**
+- Price chart with moving averages (SMA 20, SMA 50)
+- RSI (Relative Strength Index) indicator
+- Volume bars
+- Current RSI signal (Overbought/Oversold/Neutral)
+
+**How to use:**
+- **Moving Averages**: Look for crossovers as potential buy/sell signals
+  - Price above MA = Potential uptrend
+  - Price below MA = Potential downtrend
+- **RSI Indicator**: 
+  - RSI > 70 = Overbought (potential sell signal)
+  - RSI < 30 = Oversold (potential buy signal)
+  - RSI 30-70 = Neutral territory
+
+**Key insights:**
+- Identify trend direction and strength
+- Spot potential reversal points
+- Gauge market momentum
+
+### Time Series Analysis Tab 🔍
+
+**What you'll find:**
+- Time series decomposition (Trend, Seasonal, Residual)
+- Stationarity test results (ADF test)
+- Autocorrelation and Partial Autocorrelation plots
+
+**How to use:**
+- **Decomposition**: 
+  - Trend shows long-term direction
+  - Seasonal shows recurring patterns
+  - Residual shows random fluctuations
+- **Stationarity Test**: 
+  - Stationary = Good for forecasting
+  - Non-stationary = May need transformation
+- **ACF/PACF**: Helps determine optimal forecasting parameters
+
+**Key insights:**
+- Understand underlying patterns in price data
+- Assess data quality for modeling
+- Identify cyclical behaviors
+
+### Forecasting Tab 🔮
+
+**What you'll find:**
+- ARIMA model forecasting
+- Forecast period selection (7, 14, 30, or 60 days)
+- Confidence intervals for predictions
+- Model performance metrics
+
+**How to use:**
+1. Select forecast period (start with 7-14 days for better accuracy)
+2. Click "🚀 Generate Forecast"
+3. Review the forecast chart and metrics
+4. Download results if needed
+
+**Understanding the forecast:**
+- **Blue line**: Historical prices
+- **Red dashed line**: Forecast predictions
+- **Shaded area**: Confidence interval (uncertainty range)
+- **Metrics**: Lower values = Better model performance
+
+## Key Metrics Explained 📈
+
+### Header Metrics
+- **Current Price**: Latest closing price with 24h change
+- **24h Volume**: Trading volume in the last 24 hours
+- **52W High**: Highest price in the past year
+- **Annual Volatility**: Price volatility annualized (higher = more risky)
+
+### Technical Indicators
+- **RSI (14)**: Momentum oscillator (0-100 scale)
+- **SMA**: Simple Moving Average (trend indicator)
+- **Volume**: Number of shares/coins traded
+
+### Forecast Metrics
+- **RMSE**: Root Mean Square Error (prediction accuracy)
+- **MAE**: Mean Absolute Error (average prediction error)
+- **AIC/BIC**: Model selection criteria (lower is better)
+
+## Best Practices 💡
+
+### Data Selection
+- **Time Period**: Use 6-12 months for comprehensive analysis
+- **Cryptocurrency**: Start with major coins (BTC, ETH) for more reliable data
+- **Market Conditions**: Consider overall market trends
+
+### Analysis Workflow
+1. **Start with Overview**: Get familiar with price patterns
+2. **Technical Analysis**: Identify current market conditions
+3. **Time Series Analysis**: Understand data characteristics
+4. **Forecasting**: Generate predictions (use shorter periods for higher accuracy)
+
+### Interpretation Guidelines
+- **Combine Multiple Indicators**: Don't rely on a single metric
+- **Consider Market Context**: External factors affect crypto prices
+- **Validate Forecasts**: Compare predictions with actual outcomes
+- **Risk Management**: Remember forecasts are estimates, not guarantees
+
+## Troubleshooting 🔧
+
+### Common Issues
+
+**"Data loading failed"**
+- Check internet connection
+- Try a different date range
+- Wait a moment and retry (rate limiting)
+
+**"Insufficient data for analysis"**
+- Extend the date range
+- Try a different cryptocurrency
+- Ensure at least 30 days of data
+
+**"Forecast generation error"**
+- Reduce forecast period
+- Check data quality
+- Try with more historical data
+
+**Charts not displaying**
+- Refresh the page
+- Check browser compatibility
+- Disable ad blockers
+
+### Performance Tips
+- Use reasonable date ranges (avoid very long periods for initial analysis)
+- Allow time for data loading
+- Close unused tabs to free memory
+
+## Advanced Features 🎓
+
+### Data Export
+- Download forecast results as CSV
+- Save charts as images (right-click on charts)
+- Copy data from statistical tables
+
+### Customization Options
+- Adjust forecast periods based on your needs
+- Focus on specific date ranges for detailed analysis
+- Compare different cryptocurrencies by reloading data
+
+## Understanding Limitations ⚠️
+
+### Data Limitations
+- Historical data only (not real-time)
+- Dependent on external API availability
+- Limited to daily frequency data
+
+### Model Limitations
+- Forecasts are probabilistic, not certain
+- Past performance doesn't guarantee future results
+- External factors (news, regulations) aren't considered
+
+### Usage Limitations
+- For educational/research purposes
+- Not financial advice
+- Results should be validated with other sources
+
+## Frequently Asked Questions ❓
+
+**Q: How accurate are the forecasts?**
+A: Accuracy varies with market conditions, forecast period, and cryptocurrency. Shorter periods (7-14 days) tend to be more accurate.
+
+**Q: Can I use this for trading decisions?**
+A: This tool is for educational purposes. Always do additional research and consult financial advisors.
+
+**Q: Why is my data loading slowly?**
+A: Data fetching depends on API response times and your internet connection. Please be patient.
+
+**Q: What cryptocurrencies are supported?**
+A: Currently supports 8 major cryptocurrencies: Bitcoin, Ethereum, Binance Coin, Cardano, Solana, Polkadot, Dogecoin, and Avalanche.
+
+**Q: Can I analyze multiple cryptocurrencies simultaneously?**
+A: Currently, you need to load one cryptocurrency at a time, but you can easily switch between them.
+
+## Getting Help 🆘
+
+If you encounter issues or have questions:
+
+1. **Check this guide** for common solutions
+2. **Refresh the page** to reset the application
+3. **Try different parameters** (dates, cryptocurrencies, forecast periods)
+4. **Contact support** through the project repository
+
+## Tips for Better Analysis 💪
+
+1. **Start Simple**: Begin with basic overview before diving into complex analysis
+2. **Cross-Validate**: Use multiple timeframes and indicators
+3. **Stay Updated**: Crypto markets change rapidly
+4. **Document Findings**: Keep notes of interesting patterns
+5. **Practice**: Regular use improves interpretation skills
+
+---
+
+**Remember**: This tool provides insights and analysis capabilities, but cryptocurrency investing involves significant risk. Always conduct thorough research and consider your risk tolerance before making investment decisions.
+
+**Happy Analyzing! 📈🚀**
