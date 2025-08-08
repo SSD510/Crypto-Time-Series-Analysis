@@ -176,8 +176,8 @@ class DataProcessor:
         df.sort_index(inplace=True)
         
         # Handle missing values
-        df.fillna(method='forward', inplace=True)
-        df.fillna(method='backward', inplace=True)
+        df.fillna(method='ffill', inplace=True)
+        df.fillna(method='bfill', inplace=True)
         
         # Remove outliers (prices that are 0 or negative)
         numeric_columns = ['open', 'high', 'low', 'close', 'volume']
